@@ -170,15 +170,6 @@
           <stringProp name="DurationAssertion.duration">3000</stringProp>
         </DurationAssertion>
         <hashTree/>
-        <HTMLAssertion guiclass="HTMLAssertionGui" testclass="HTMLAssertion" testname="HTML Assertion" enabled="true">
-          <longProp name="html_assertion_error_threshold">8</longProp>
-          <longProp name="html_assertion_warning_threshold">80</longProp>
-          <stringProp name="html_assertion_doctype">omit</stringProp>
-          <boolProp name="html_assertion_errorsonly">false</boolProp>
-          <longProp name="html_assertion_format">0</longProp>
-          <stringProp name="html_assertion_filename"></stringProp>
-        </HTMLAssertion>
-        <hashTree/>
         <ResultCollector guiclass="AssertionVisualizer" testclass="ResultCollector" testname="Assertion Results" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>

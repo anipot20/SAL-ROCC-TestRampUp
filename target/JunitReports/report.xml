@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="25.782">
-<testcase classname="Deposit amount to account" name="Deposit positive amount" time="11.675">
+<testsuite errors="0" failures="8" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="270.827">
+<testcase classname="Deposit amount to account" name="Deposit positive amount" time="27.199">
 <system-out><![CDATA[Given User is logged into account...........................................passed
 And User selects Deposits page..............................................passed
 And user enters positive amount.............................................passed
@@ -8,12 +8,191 @@ And user clicks on Deposit button...........................................pass
 Then The amount should be added to account..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login to Banking application" name="Login to Banking application with username" time="13.728">
+<testcase classname="Deposit amount to account" name="Deposit negative amount" time="48.379">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'Failed')]&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1182}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 4a535dce4140fdaf381f7a4a3c64758a&#10;*** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is logged into account...........................................passed
+And User selects Deposits page..............................................passed
+And user enters negative amount.............................................passed
+And user clicks on Deposit button...........................................passed
+Then Error message should be displayed......................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Failed')]"}
+  (Session info: chrome=84.0.4147.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1182}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4a535dce4140fdaf381f7a4a3c64758a
+*** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+	at StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:92)
+	at ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:17)
+]]></failure>
+</testcase>
+<testcase classname="Deposit amount to account" name="Deposit NaN amount" time="49.413">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'Failed')]&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 501488432f9b86f71732a60c1a8cb42b&#10;*** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is logged into account...........................................passed
+And User selects Deposits page..............................................passed
+And user enters NaN amount..................................................passed
+And user clicks on Deposit button...........................................passed
+Then Error message should be displayed......................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Failed')]"}
+  (Session info: chrome=84.0.4147.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 501488432f9b86f71732a60c1a8cb42b
+*** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+	at StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:92)
+	at ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:25)
+]]></failure>
+</testcase>
+<testcase classname="Deposit amount to account" name="Deposit OutOfRange amount" time="16.108">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is logged into account...........................................passed
+And User selects Deposits page..............................................passed
+And user enters OutOfRange amount...........................................failed
+And user clicks on Deposit button...........................................skipped
+Then Error message should be displayed......................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at StepDefinitions.DepositSteps.userEntersOutOfRangeAmount(DepositSteps.java:109)
+	at ✽.user enters OutOfRange amount(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:31)
+]]></failure>
+</testcase>
+<testcase classname="Login to Banking application" name="Login to Banking application with username" time="16.246">
 <system-out><![CDATA[Given User is on the Login Page.............................................passed
 And User clicks on Customer Login button....................................passed
 And User selects the user name..............................................passed
 And User clicks on Login button.............................................passed
 Then User should be logged in to application................................passed
 ]]></system-out>
+</testcase>
+<testcase classname="Withdraw amount from account" name="Withdraw positive amount within balance" time="44.983">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()='Transaction Successful']&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 0b289633b651de9f7f2306e3cc7af5a4&#10;*** Element info: {Using=xpath, value=//*[text()='Transaction Successful']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is logged into account...........................................passed
+And User selects Withdrawl page.............................................passed
+And user enters positive amount to withdraw within balance..................passed
+And user clicks on Withdraw button..........................................passed
+Then The amount should be deducted from account.............................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Transaction Successful']"}
+  (Session info: chrome=84.0.4147.89)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 0b289633b651de9f7f2306e3cc7af5a4
+*** Element info: {Using=xpath, value=//*[text()='Transaction Successful']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+	at StepDefinitions.WithdrawlSteps.theAmountShouldBeDeductedFromAccount(WithdrawlSteps.java:41)
+	at ✽.The amount should be deducted from account(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:15)
+]]></failure>
+</testcase>
+<testcase classname="Withdraw amount from account" name="Withdraw positive amount out of balance" time="16.651">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is logged into account...........................................passed
+And User selects Withdrawl page.............................................passed
+And user enters positive amount to withdraw out of balance..................failed
+And user clicks on Withdraw button..........................................skipped
+Then Error message should be displayed......................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at StepDefinitions.WithdrawlSteps.userEntersPositiveAmountToWithdrawOutOfBalance(WithdrawlSteps.java:64)
+	at ✽.user enters positive amount to withdraw out of balance(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:29)
+]]></failure>
+</testcase>
+<testcase classname="Withdraw amount from account" name="Withdraw negative amount" time="14.352">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is logged into account...........................................passed
+And User selects Withdrawl page.............................................passed
+And user enters negative to withdraw amount.................................failed
+And user clicks on Withdraw button..........................................skipped
+Then Error message should be displayed......................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at StepDefinitions.WithdrawlSteps.userEntersNegativeToWithdrawAmount(WithdrawlSteps.java:71)
+	at ✽.user enters negative to withdraw amount(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:37)
+]]></failure>
+</testcase>
+<testcase classname="Withdraw amount from account" name="Withdraw NaN amount" time="20.179">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is logged into account...........................................passed
+And User selects Withdrawl page.............................................passed
+And user enters NaN to withdraw amount......................................failed
+And user clicks on Withdraw button..........................................skipped
+Then Error message should be displayed......................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at StepDefinitions.WithdrawlSteps.userEntersNaNToWithdrawAmount(WithdrawlSteps.java:78)
+	at ✽.user enters NaN to withdraw amount(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:45)
+]]></failure>
+</testcase>
+<testcase classname="Withdraw amount from account" name="Withdraw OutOfRange amount" time="16.736">
+<failure message="" type="java.lang.NullPointerException"><![CDATA[Given User is logged into account...........................................passed
+And User selects Withdrawl page.............................................passed
+And user enters OutOfRange to withdraw amount...............................failed
+And user clicks on Withdraw button..........................................skipped
+Then Error message should be displayed......................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at StepDefinitions.WithdrawlSteps.userEntersOutOfRangeToWithdrawAmount(WithdrawlSteps.java:85)
+	at ✽.user enters OutOfRange to withdraw amount(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:53)
+]]></failure>
 </testcase>
 </testsuite>

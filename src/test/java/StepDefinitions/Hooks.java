@@ -20,8 +20,8 @@ public class Hooks extends BaseUtil{
     public static CustomerHomePage customerHomePage;
     public static LoginPage loginPage;
 
-    @Before("@Sanity")
-    public void BeforeTest() throws IOException, InterruptedException {
+    @Before
+    public void BeforeTest() throws IOException {
         System.out.println("Inside Before Test");
         BaseUtil.GetChromeDriver();
         driver =Hooks.OpenApplicaitonInBrowser();
@@ -54,7 +54,7 @@ public class Hooks extends BaseUtil{
         return driver;
     }
 
-    @After("@Sanity")
+    @After
     public void AfterTest(){
         System.out.println("Inside After Test");
         driver.quit();

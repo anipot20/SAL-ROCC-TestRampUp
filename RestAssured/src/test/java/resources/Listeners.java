@@ -1,5 +1,4 @@
 package resources;
-
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.ITestContext;
@@ -40,6 +39,5 @@ public class Listeners implements ITestListener {
 	public void onStart(ITestContext context) {
 		
 	}
-
 
 }

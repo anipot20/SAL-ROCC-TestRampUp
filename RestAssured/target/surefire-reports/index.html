@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Learning\REST-API\RestAPIPractice\Demo\functional.xml</span>
+                    <span>C:\Learning\REST-API\RestAPIPractice\Demo\regression.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,11 +103,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="libraryService.LibraryTest" class="method navigator-link" hash-for-method="LibraryDelete">LibraryDelete</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="libraryService.LibraryTest" class="method navigator-link" hash-for-method="LibraryGET">LibraryGET</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -142,13 +137,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="LibraryGET">
-                  </a> <!-- LibraryGET -->
-                  <span class="method-name">LibraryGET</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="LibraryPOST">
                   </a> <!-- LibraryPOST -->
                   <span class="method-name">LibraryPOST</span>
@@ -159,30 +147,23 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Learning\REST-API\RestAPIPractice\Demo\functional.xml</span>
+            <span class="header-content">C:\Learning\REST-API\RestAPIPractice\Demo\regression.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;resources.Listeners&quot;/&gt;
-  &lt;/listeners&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;Regression&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Library&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;libraryService.LibraryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Library --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;ROCC&quot; verbose=&quot;0&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;roccService.ROCCTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;exclude name=&quot;Logger&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- roccService.ROCCTest --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ROCC --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,9 +176,6 @@
             <ul>
               <li>
                 <span class="test-name">Library (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">ROCC (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -235,24 +213,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LibraryPOST')
 data.setCell(0, 2, 'libraryService.LibraryTest')
-data.setCell(0, 3, 5661);
+data.setCell(0, 3, 4730);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'LibraryDelete')
 data.setCell(1, 2, 'libraryService.LibraryTest')
-data.setCell(1, 3, 1297);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'LibraryGET')
-data.setCell(2, 2, 'libraryService.LibraryTest')
-data.setCell(2, 3, 298);
+data.setCell(1, 3, 256);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -267,15 +241,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">roccService.ROCCTest</span>
+              <span class="ignored-class-name">libraryService.LibraryTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">Login</span>
-                <br/>
-                <span class="ignored-method-name">Logger</span>
+                <span class="ignored-method-name">LibraryGET</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -294,15 +266,11 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LibraryPOST</span>
-                <span class="method-start">2771 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">LibraryGET</span>
-                <span class="method-start">8453 ms</span>
+                <span class="method-start">2607 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LibraryDelete</span>
-                <span class="method-start">8753 ms</span>
+                <span class="method-start">7350 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

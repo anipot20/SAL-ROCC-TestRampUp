@@ -1,35 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-24T12:40:49 IST" name="Suite" finished-at="2020-07-24T12:40:59 IST" duration-ms="10219">
+  <suite started-at="2020-07-24T16:02:02 IST" name="Suite" finished-at="2020-07-24T16:02:09 IST" duration-ms="7615">
     <groups>
       <group name="Regression">
-        <method signature="LibraryTest.LibraryPOST()[pri:1, instance:libraryService.LibraryTest@45b4c3a9]" name="LibraryPOST" class="libraryService.LibraryTest"/>
-        <method signature="LibraryTest.LibraryDelete()[pri:3, instance:libraryService.LibraryTest@45b4c3a9]" name="LibraryDelete" class="libraryService.LibraryTest"/>
+        <method signature="LibraryTest.LibraryPOST()[pri:1, instance:libraryService.LibraryTest@8c3b9d]" name="LibraryPOST" class="libraryService.LibraryTest"/>
+        <method signature="LibraryTest.LibraryDelete()[pri:3, instance:libraryService.LibraryTest@8c3b9d]" name="LibraryDelete" class="libraryService.LibraryTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2020-07-24T12:40:49 IST" name="Library" finished-at="2020-07-24T12:40:59 IST" duration-ms="10058">
+    <test started-at="2020-07-24T16:02:02 IST" name="Library" finished-at="2020-07-24T16:02:09 IST" duration-ms="7615">
       <class name="libraryService.LibraryTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:libraryService.LibraryTest@45b4c3a9]" started-at="2020-07-24T12:40:49 IST" name="initialize" finished-at="2020-07-24T12:40:51 IST" duration-ms="2709" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:libraryService.LibraryTest@8c3b9d]" started-at="2020-07-24T16:02:02 IST" name="initialize" finished-at="2020-07-24T16:02:04 IST" duration-ms="2551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="LibraryPOST()[pri:1, instance:libraryService.LibraryTest@45b4c3a9]" started-at="2020-07-24T12:40:51 IST" name="LibraryPOST" finished-at="2020-07-24T12:40:57 IST" duration-ms="5661" status="PASS">
+        <test-method signature="LibraryPOST()[pri:1, instance:libraryService.LibraryTest@8c3b9d]" started-at="2020-07-24T16:02:04 IST" name="LibraryPOST" finished-at="2020-07-24T16:02:09 IST" duration-ms="4730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LibraryPOST -->
-        <test-method signature="LibraryGET()[pri:2, instance:libraryService.LibraryTest@45b4c3a9]" started-at="2020-07-24T12:40:57 IST" name="LibraryGET" finished-at="2020-07-24T12:40:57 IST" duration-ms="298" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LibraryGET -->
-        <test-method signature="LibraryDelete()[pri:3, instance:libraryService.LibraryTest@45b4c3a9]" started-at="2020-07-24T12:40:57 IST" name="LibraryDelete" finished-at="2020-07-24T12:40:59 IST" depends-on-methods="libraryService.LibraryTest.LibraryPOST" duration-ms="1297" status="PASS">
+        <test-method signature="LibraryDelete()[pri:3, instance:libraryService.LibraryTest@8c3b9d]" started-at="2020-07-24T16:02:09 IST" name="LibraryDelete" finished-at="2020-07-24T16:02:09 IST" depends-on-methods="libraryService.LibraryTest.LibraryPOST" duration-ms="256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LibraryDelete -->
       </class> <!-- libraryService.LibraryTest -->
     </test> <!-- Library -->
-    <test started-at="2020-07-24T12:40:59 IST" name="ROCC" finished-at="2020-07-24T12:40:59 IST" duration-ms="0">
-    </test> <!-- ROCC -->
   </suite> <!-- Suite -->
 </testng-results>

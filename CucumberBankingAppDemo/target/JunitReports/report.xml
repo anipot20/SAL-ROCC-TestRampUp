@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="550.927">
-<testcase classname="Deposit amount to account" name="Deposit positive amount" time="67.558">
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="236.986">
+<testcase classname="Deposit amount to account" name="Deposit positive amount" time="11.659">
 <system-out><![CDATA[Given User is logged into account...........................................passed
 And User selects Deposits page..............................................passed
 And user enters positive amount.............................................passed
@@ -8,8 +8,8 @@ And user clicks on Deposit button...........................................pass
 Then The amount should be added to account..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Deposit amount to account" name="Deposit negative amount" time="101.396">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'Failed')]&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1114}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 7de8ea1d6ab1ad3d1d83cd954df583bb&#10;*** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is logged into account...........................................passed
+<testcase classname="Deposit amount to account" name="Deposit negative amount" time="40.351">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'Failed')]&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1124}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 1b342ffe9931e96b679da281ba5098d1&#10;*** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is logged into account...........................................passed
 And User selects Deposits page..............................................passed
 And user enters negative amount.............................................passed
 And user clicks on Deposit button...........................................passed
@@ -22,8 +22,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1114}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7de8ea1d6ab1ad3d1d83cd954df583bb
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1124}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1b342ffe9931e96b679da281ba5098d1
 *** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -43,11 +43,11 @@ Session ID: 7de8ea1d6ab1ad3d1d83cd954df583bb
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
 	at StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:79)
-	at ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:18)
+	at ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:19)
 ]]></failure>
 </testcase>
-<testcase classname="Deposit amount to account" name="Deposit NaN amount" time="120.03">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'Failed')]&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 5c9eba2c5561c0d790f662cc062fc213&#10;*** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is logged into account...........................................passed
+<testcase classname="Deposit amount to account" name="Deposit NaN amount" time="41.584">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'Failed')]&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1169}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 66f328a482c79d637bda40e2e331f183&#10;*** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is logged into account...........................................passed
 And User selects Deposits page..............................................passed
 And user enters NaN amount..................................................passed
 And user clicks on Deposit button...........................................passed
@@ -60,8 +60,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5c9eba2c5561c0d790f662cc062fc213
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1169}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 66f328a482c79d637bda40e2e331f183
 *** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -81,11 +81,11 @@ Session ID: 5c9eba2c5561c0d790f662cc062fc213
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
 	at StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:79)
-	at ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:26)
+	at ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:27)
 ]]></failure>
 </testcase>
-<testcase classname="Deposit amount to account" name="Deposit OutOfRange amount" time="100.049">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'Failed')]&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 9a0db8fbd0345a388cf3f31e7edc9b44&#10;*** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is logged into account...........................................passed
+<testcase classname="Deposit amount to account" name="Deposit OutOfRange amount" time="41.547">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'Failed')]&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: b0151303ebff1f666a08442ccf05ce31&#10;*** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is logged into account...........................................passed
 And User selects Deposits page..............................................passed
 And user enters OutOfRange amount...........................................passed
 And user clicks on Deposit button...........................................passed
@@ -98,8 +98,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9a0db8fbd0345a388cf3f31e7edc9b44
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b0151303ebff1f666a08442ccf05ce31
 *** Element info: {Using=xpath, value=//*[contains(text(),'Failed')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -119,10 +119,10 @@ Session ID: 9a0db8fbd0345a388cf3f31e7edc9b44
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
 	at StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:79)
-	at ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:34)
+	at ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:35)
 ]]></failure>
 </testcase>
-<testcase classname="Login to Banking application" name="Login to Banking application with username" time="17.152">
+<testcase classname="Login to Banking application" name="Login to Banking application with username" time="13.772">
 <system-out><![CDATA[Given User is on the Login Page.............................................passed
 And User clicks on Customer Login button....................................passed
 And User selects the user name..............................................passed
@@ -130,8 +130,8 @@ And User clicks on Login button.............................................pass
 Then User should be logged in to application................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Withdraw amount from account" name="Withdraw positive amount within balance" time="43.726">
-<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()='Transaction Successful']&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1720}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 9c9bc84fd8bd7ab3e2626d76aba22ca3&#10;*** Element info: {Using=xpath, value=//*[text()='Transaction Successful']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is logged into account...........................................passed
+<testcase classname="Withdraw amount from account" name="Withdraw positive amount within balance" time="42.991">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()='Transaction Successful']&quot;}&#10;  (Session info: chrome=84.0.4147.89)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 847f70e34a4b7591ca46d0ec2810c401&#10;*** Element info: {Using=xpath, value=//*[text()='Transaction Successful']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User is logged into account...........................................passed
 And User selects Withdrawl page.............................................passed
 And user enters positive amount for withdrawl within balance................passed
 And user clicks on Withdraw button..........................................passed
@@ -144,8 +144,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'YY089737', ip: '144.54.216.236', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_112'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1720}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9c9bc84fd8bd7ab3e2626d76aba22ca3
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ing08804\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:1326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 847f70e34a4b7591ca46d0ec2810c401
 *** Element info: {Using=xpath, value=//*[text()='Transaction Successful']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -168,7 +168,7 @@ Session ID: 9c9bc84fd8bd7ab3e2626d76aba22ca3
 	at ✽.The amount should be deducted from account(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:16)
 ]]></failure>
 </testcase>
-<testcase classname="Withdraw amount from account" name="Withdraw positive amount out of balance" time="12.435">
+<testcase classname="Withdraw amount from account" name="Withdraw positive amount out of balance" time="11.83">
 <system-out><![CDATA[Given User is logged into account...........................................passed
 And User selects Withdrawl page.............................................passed
 And user enters positive amount for withdrawl out of balance................passed
@@ -176,7 +176,7 @@ And user clicks on Withdraw button..........................................pass
 Then Withdrawl Error message should be displayed............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Withdraw amount from account" name="Withdraw negative amount" time="33.78">
+<testcase classname="Withdraw amount from account" name="Withdraw negative amount" time="10.929">
 <system-out><![CDATA[Given User is logged into account...........................................passed
 And User selects Withdrawl page.............................................passed
 And user enters negative for withdrawl amount...............................passed
@@ -184,7 +184,7 @@ And user clicks on Withdraw button..........................................pass
 Then Withdrawl Error message should be displayed............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Withdraw amount from account" name="Withdraw NaN amount" time="16.523">
+<testcase classname="Withdraw amount from account" name="Withdraw NaN amount" time="10.782">
 <system-out><![CDATA[Given User is logged into account...........................................passed
 And User selects Withdrawl page.............................................passed
 And user enters NaN for withdrawl amount....................................passed
@@ -192,7 +192,7 @@ And user clicks on Withdraw button..........................................pass
 Then Withdrawl Error message should be displayed............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Withdraw amount from account" name="Withdraw OutOfRange amount" time="37.784">
+<testcase classname="Withdraw amount from account" name="Withdraw OutOfRange amount" time="10.989">
 <system-out><![CDATA[Given User is logged into account...........................................passed
 And User selects Withdrawl page.............................................passed
 And user enters OutOfRange for withdrawl amount.............................passed

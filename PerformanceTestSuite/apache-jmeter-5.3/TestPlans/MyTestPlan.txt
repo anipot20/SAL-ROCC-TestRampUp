@@ -1,0 +1,55 @@
+line 4 column 9 - Warning: <meta> lacks "content" attribute
+line 146 column 16 - Warning: unknown attribute "property"
+line 146 column 54 - Warning: unknown attribute "property"
+line 147 column 9 - Warning: <script> lacks "type" attribute
+line 156 column 9 - Warning: <style> isn't allowed in <body> elements
+line 203 column 15 - Warning: <style> isn't allowed in <body> elements
+line 207 column 15 - Warning: <style> isn't allowed in <body> elements
+line 310 column 25 - Warning: <style> isn't allowed in <body> elements
+line 317 column 17 - Warning: unknown attribute "sizes"
+line 317 column 17 - Warning: link isn't allowed in <body> elements
+line 318 column 1 - Warning: unknown attribute "sizes"
+line 318 column 1 - Warning: link isn't allowed in <body> elements
+line 319 column 1 - Warning: link isn't allowed in <body> elements
+line 320 column 1 - Warning: meta isn't allowed in <body> elements
+line 321 column -3 - Warning: </head> isn't allowed in <body> elements
+line 323 column 1 - Warning: <body> isn't allowed in <body> elements
+line 333 column 9 - Error: <header> is not recognized!
+line 333 column 9 - Warning: discarding unexpected <header>
+line 343 column 50 - Warning: missing </a> before <h1>
+line 345 column 21 - Warning: discarding unexpected </a>
+line 349 column 59 - Warning: trimming empty <span>
+line 350 column 49 - Warning: trimming empty <button>
+line 351 column 50 - Error: <nav> is not recognized!
+line 351 column 50 - Warning: discarding unexpected <nav>
+line 356 column 53 - Warning: discarding unexpected </nav>
+line 360 column 191 - Warning: trimming empty <i>
+line 365 column 5 - Warning: discarding unexpected </header>
+line 372 column 9 - Warning: unknown attribute "role"
+line 375 column 17 - Error: <main> is not recognized!
+line 375 column 17 - Warning: discarding unexpected <main>
+line 378 column 25 - Error: <section> is not recognized!
+line 378 column 25 - Warning: discarding unexpected <section>
+line 382 column 1 - Error: <article> is not recognized!
+line 382 column 1 - Warning: discarding unexpected <article>
+line 386 column 9 - Error: <header> is not recognized!
+line 386 column 9 - Warning: discarding unexpected <header>
+line 390 column 5 - Warning: discarding unexpected </header>
+line 422 column 106 - Warning: <style> lacks "type" attribute
+line 422 column 106 - Warning: <style> isn't allowed in <div> elements
+line 422 column 324 - Warning: unknown attribute "kid_directed_site"
+line 422 column 324 - Warning: unknown attribute "data-share"
+line 422 column 324 - Warning: unknown attribute "data-show-faces"
+line 422 column 324 - Warning: unknown attribute "data-action"
+line 422 column 324 - Warning: unknown attribute "data-layout"
+line 422 column 324 - Warning: unknown attribute "data-width"
+line 422 column 324 - Warning: unknown attribute "data-colorschem"
+line 422 column 324 - Warning: unknown attribute "data-size"
+line 422 column 324 - Warning: unknown attribute "data-href"
+line 422 column 614 - Warning: trimming empty <div>
+line 422 column 620 - Warning: trimming empty <div>
+InputStream: Doctype given is ""
+InputStream: Document content looks like HTML 4.01 Transitional
+69 warnings, 8 errors were found!
+This document has errors that must be fixed before
+using HTML Tidy to generate a tidied up version.

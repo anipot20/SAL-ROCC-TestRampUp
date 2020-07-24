@@ -1,0 +1,1009 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-24T05:45:18.624Z",
+        "before": [
+          {
+            "result": {
+              "duration": 16744000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Deposit positive amount",
+        "description": "",
+        "id": "deposit-amount-to-account;deposit-positive-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 1610000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3882000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User selects Deposits page",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userSelectsDepositsPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1567000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters positive amount",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userEntersPositiveAmount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3090000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on Deposit button",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userClicksOnDepositButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The amount should be added to account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.theAmountShouldBeAddedToAccount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-24T05:45:45.871Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11228000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Deposit negative amount",
+        "description": "",
+        "id": "deposit-amount-to-account;deposit-negative-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 1458000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1734000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects Deposits page",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userSelectsDepositsPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 676000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters negative amount",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userEntersNegativeAmount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3111000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on Deposit button",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userClicksOnDepositButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Failed\u0027)]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YY089737\u0027, ip: \u0027144.54.216.236\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\ing08804\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:1182}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 4a535dce4140fdaf381f7a4a3c64758a\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Failed\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:92)\r\n\tat ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:17)\r\n",
+              "duration": 30084000000,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "Error message should be displayed",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-24T05:46:34.273Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10330000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Deposit NaN amount",
+        "description": "",
+        "id": "deposit-amount-to-account;deposit-nan-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 1442000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3213000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 80000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User selects Deposits page",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userSelectsDepositsPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1151000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user enters NaN amount",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userEntersNaNAmount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3107000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user clicks on Deposit button",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userClicksOnDepositButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Failed\u0027)]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YY089737\u0027, ip: \u0027144.54.216.236\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\ing08804\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:1213}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 501488432f9b86f71732a60c1a8cb42b\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Failed\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:92)\r\n\tat ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:25)\r\n",
+              "duration": 30077000000,
+              "status": "failed"
+            },
+            "line": 25,
+            "name": "Error message should be displayed",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-24T05:47:23.707Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11004000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Deposit OutOfRange amount",
+        "description": "",
+        "id": "deposit-amount-to-account;deposit-outofrange-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 1460000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3542000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 95000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User selects Deposits page",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userSelectsDepositsPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat StepDefinitions.DepositSteps.userEntersOutOfRangeAmount(DepositSteps.java:109)\r\n\tat ✽.user enters OutOfRange amount(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:31)\r\n",
+              "status": "failed"
+            },
+            "line": 31,
+            "name": "user enters OutOfRange amount",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userEntersOutOfRangeAmount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "user clicks on Deposit button",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userClicksOnDepositButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Error message should be displayed",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Deposit amount to account",
+    "description": "",
+    "id": "deposit-amount-to-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Deposit.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-24T05:47:39.835Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9422000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login to Banking application with username",
+        "description": "",
+        "id": "login-to-banking-application;login-to-banking-application-with-username",
+        "after": [
+          {
+            "result": {
+              "duration": 1493000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the Login Page",
+            "match": {
+              "location": "StepDefinitions.LoginToApplicationSteps.userIsOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on Customer Login button",
+            "match": {
+              "location": "StepDefinitions.LoginToApplicationSteps.userClicksOnCustomerLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1151000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User selects the user name",
+            "match": {
+              "location": "StepDefinitions.LoginToApplicationSteps.userSelectsTheUserName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2116000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on Login button",
+            "match": {
+              "location": "StepDefinitions.LoginToApplicationSteps.userClicksOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2055000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be logged in to application.",
+            "match": {
+              "location": "StepDefinitions.LoginToApplicationSteps.userShouldBeLoggedInToApplication()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login to Banking application",
+    "description": "",
+    "id": "login-to-banking-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/LoginToApplicaiton.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-24T05:47:56.088Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9725000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Withdraw positive amount within balance",
+        "description": "",
+        "id": "withdraw-amount-from-account;withdraw-positive-amount-within-balance",
+        "after": [
+          {
+            "result": {
+              "duration": 1519000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2211000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User selects Withdrawl page",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userSelectsWithdrawlPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1276000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enters positive amount to withdraw within balance",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userEntersPositiveAmountToWithdrawWithinBalance()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 127000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks on Withdraw button",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userClicksOnWithdrawButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Transaction Successful\u0027]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YY089737\u0027, ip: \u0027144.54.216.236\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\ing08804\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:1303}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 0b289633b651de9f7f2306e3cc7af5a4\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Transaction Successful\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat StepDefinitions.WithdrawlSteps.theAmountShouldBeDeductedFromAccount(WithdrawlSteps.java:41)\r\n\tat ✽.The amount should be deducted from account(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:15)\r\n",
+              "duration": 30047000000,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "The amount should be deducted from account",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.theAmountShouldBeDeductedFromAccount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-24T05:48:41.093Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11489000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Withdraw positive amount out of balance",
+        "description": "",
+        "id": "withdraw-amount-from-account;withdraw-positive-amount-out-of-balance",
+        "after": [
+          {
+            "result": {
+              "duration": 1654000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3388000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 112000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User selects Withdrawl page",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userSelectsWithdrawlPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat StepDefinitions.WithdrawlSteps.userEntersPositiveAmountToWithdrawOutOfBalance(WithdrawlSteps.java:64)\r\n\tat ✽.user enters positive amount to withdraw out of balance(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:29)\r\n",
+              "status": "failed"
+            },
+            "line": 29,
+            "name": "user enters positive amount to withdraw out of balance",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userEntersPositiveAmountToWithdrawOutOfBalance()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "user clicks on Withdraw button",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userClicksOnWithdrawButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "Error message should be displayed",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-24T05:48:57.765Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9829000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Withdraw negative amount",
+        "description": "",
+        "id": "withdraw-amount-from-account;withdraw-negative-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 1937000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2511000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 71000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User selects Withdrawl page",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userSelectsWithdrawlPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat StepDefinitions.WithdrawlSteps.userEntersNegativeToWithdrawAmount(WithdrawlSteps.java:71)\r\n\tat ✽.user enters negative to withdraw amount(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:37)\r\n",
+              "status": "failed"
+            },
+            "line": 37,
+            "name": "user enters negative to withdraw amount",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userEntersNegativeToWithdrawAmount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "user clicks on Withdraw button",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userClicksOnWithdrawButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "Error message should be displayed",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-24T05:49:12.122Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14441000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Withdraw NaN amount",
+        "description": "",
+        "id": "withdraw-amount-from-account;withdraw-nan-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 1234000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4438000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User selects Withdrawl page",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userSelectsWithdrawlPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat StepDefinitions.WithdrawlSteps.userEntersNaNToWithdrawAmount(WithdrawlSteps.java:78)\r\n\tat ✽.user enters NaN to withdraw amount(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:45)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 45,
+            "name": "user enters NaN to withdraw amount",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userEntersNaNToWithdrawAmount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "user clicks on Withdraw button",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userClicksOnWithdrawButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "Error message should be displayed",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-24T05:49:32.309Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11540000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 50,
+        "name": "Withdraw OutOfRange amount",
+        "description": "",
+        "id": "withdraw-amount-from-account;withdraw-outofrange-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 2145000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2965000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User selects Withdrawl page",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userSelectsWithdrawlPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat StepDefinitions.WithdrawlSteps.userEntersOutOfRangeToWithdrawAmount(WithdrawlSteps.java:85)\r\n\tat ✽.user enters OutOfRange to withdraw amount(file:///C:/Users/ing08804/IdeaProjects/CucumberBankingAppDemo/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:53)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 53,
+            "name": "user enters OutOfRange to withdraw amount",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userEntersOutOfRangeToWithdrawAmount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "user clicks on Withdraw button",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userClicksOnWithdrawButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "Error message should be displayed",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Withdraw amount from account",
+    "description": "",
+    "id": "withdraw-amount-from-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Withdrawl.feature",
+    "tags": []
+  }
+]

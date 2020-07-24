@@ -1,4 +1,4 @@
 # SAL-ROCC-TestRampUp
-This repository is for the Test Rampup POCs for the SA-ROCC Test Team.
+This is a Repo for SA-ROCC Team's Tech Rampup POCs
 
-Includes Jmeter, Cucumber, RestAssured, Selenium-Java Projects.
+Projects include: Jmeter, Cucmber, RestAssured, Java-Selenium

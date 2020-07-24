@@ -1,10 +1,7 @@
 package StepDefinitions;
 
 import Base.BaseUtil;
-import PageObjects.ApplicationHome;
-import PageObjects.CustomerHomePage;
-import PageObjects.Deposits;
-import PageObjects.LoginPage;
+import PageObjects.*;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -18,18 +15,10 @@ import java.util.concurrent.TimeUnit;
 
 public class DepositSteps extends BaseUtil {
 
-    //public WebDriver driver;
-    ApplicationHome applicationHome;
-    LoginPage loginPage;
+
     CustomerHomePage customerHomePage;
-    Deposits depositsPage;
-    int oldBalance;
-    int newBalance, amount;
-
-    public DepositSteps(){
-        driver=Hooks.driver;
-    }
-
+    Deposits depositsPage = new Deposits(driver);
+    int amount;
 
 
     @Given ("User is logged into account")
@@ -52,9 +41,8 @@ public class DepositSteps extends BaseUtil {
     @And ("user enters positive amount")
     public void userEntersPositiveAmount() {
         System.out.println("user enters positive amount");
-        depositsPage=new Deposits(driver);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-//        oldBalance = depositsPage.GetCurrentBalance();
+        System.out.printf("user enters positive amount");
         depositsPage = new Deposits(driver);
         amount=100;
         depositsPage.EnterDepositAmount(amount);
@@ -68,7 +56,7 @@ public class DepositSteps extends BaseUtil {
 
     @Then ("The amount should be added to account")
     public void theAmountShouldBeAddedToAccount() {
-
+        System.out.printf("The amount should be added to account");
         Assert.assertTrue(depositsPage.depositSuccessMessage.isDisplayed());
         System.out.println();
 
@@ -78,9 +66,8 @@ public class DepositSteps extends BaseUtil {
 
     @And ("user enters negative amount")
     public void userEntersNegativeAmount() {
-        depositsPage=new Deposits(driver);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-
+        System.out.printf("user enters negative amount");
         depositsPage = new Deposits(driver);
         amount=-100;
         depositsPage.EnterDepositAmount(amount);
@@ -94,9 +81,8 @@ public class DepositSteps extends BaseUtil {
 
     @And ("user enters NaN amount")
     public void userEntersNaNAmount() {
-        depositsPage=new Deposits(driver);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-
+        System.out.println("user enters NaN amount");
         depositsPage = new Deposits(driver);
         depositsPage.inputDeposit.sendKeys("abc");
         depositsPage.ClickDeposit();
@@ -104,6 +90,9 @@ public class DepositSteps extends BaseUtil {
 
     @And ("user enters OutOfRange amount")
     public void userEntersOutOfRangeAmount() {
+        System.out.println("user enters OutOfRange amount");
+        amount=-100;
+        depositsPage.EnterDepositAmount(amount);
 
     }
 }

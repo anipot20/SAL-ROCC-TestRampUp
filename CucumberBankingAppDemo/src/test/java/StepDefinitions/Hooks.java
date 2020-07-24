@@ -20,20 +20,8 @@ public class Hooks extends BaseUtil{
     public static CustomerHomePage customerHomePage;
     public static LoginPage loginPage;
 
-    @Before("@Sanity")
-    public void BeforeTest() throws IOException, InterruptedException {
-        System.out.println("Inside Before Test");
-        BaseUtil.GetChromeDriver();
-        driver =Hooks.OpenApplicaitonInBrowser();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        applicationHome = new ApplicationHome(driver);
-        applicationHome.ClickOnCustomerLogin();
-
-    }
-
-    @Before("@Regression")
-    public void BeforeRegTest() throws IOException, InterruptedException {
+    @Before
+    public void BeforeTest() throws IOException{
         System.out.println("Inside Before Test");
         BaseUtil.GetChromeDriver();
         driver =Hooks.OpenApplicaitonInBrowser();
@@ -66,18 +54,13 @@ public class Hooks extends BaseUtil{
         return driver;
     }
 
-    @After("@Sanity")
+    @After
     public void AfterTest(){
         System.out.println("Inside After Test");
         driver.quit();
 
     }
-    @After("@Regression")
-    public void AfterRegTest(){
-        System.out.println("Inside After Test");
-        driver.quit();
 
-    }
 
 
 

@@ -65,10 +65,7 @@ public class LoginToApplicationSteps {
         customerHomePage = new CustomerHomePage(driver);
         boolean status=customerHomePage.checkWelcomeBanner();
         Assert.assertTrue(status);
-//        if(status)
-//            System.out.println("User is successfully logged in.");
-//        else
-//            System.out.println("Login to application failed.");
+        System.out.println("Login was successful");
 
 
     }

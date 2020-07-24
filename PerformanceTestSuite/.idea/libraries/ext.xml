@@ -1,0 +1,36 @@
+<component name="libraryTable">
+  <library name="ext">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_http.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_bolt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-graphs-basic-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_functions.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-ffw-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_jdbc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_native.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_tcp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-dummy-0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_ftp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-autostop-0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_components.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-graphs-additional-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-tst-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-casutg-2.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-fifo-0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-functions-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-csl-0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-perfmon-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-wsc-0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_junit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_mongodb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_java.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/jmeter-plugins-manager-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/apache-jmeter-5.3/lib/ext/ApacheJMeter_ldap.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

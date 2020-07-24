@@ -11,7 +11,8 @@ import org.junit.runner.RunWith;
         plugin={"pretty","html:target/HtmlReports/report.html",
                 "junit:target/JunitReports/report.xml",
                 "json:target/JsonReports/report.json"
-        }
+        },
+        tags = "@Regression"
 
 
 

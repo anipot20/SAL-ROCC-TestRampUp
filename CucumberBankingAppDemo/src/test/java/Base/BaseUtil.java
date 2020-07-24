@@ -33,7 +33,7 @@ public class BaseUtil {
         FileInputStream fis= new FileInputStream("src/test/java/Base/Global.properties");
         prop.load(fis);
         driver.manage().deleteAllCookies();
-        driver.manage().window().maximize();;
+
         driver.get( prop.getProperty("qa-url"));
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);

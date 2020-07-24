@@ -18,21 +18,23 @@ import java.util.concurrent.TimeUnit;
 
 public class DepositSteps extends BaseUtil {
 
-
+    //public WebDriver driver;
+    ApplicationHome applicationHome;
+    LoginPage loginPage;
     CustomerHomePage customerHomePage;
     Deposits depositsPage;
-    int amount;
+    int oldBalance;
+    int newBalance, amount;
 
-
-//    public DepositSteps(){
-//        driver=Hooks.driver;
-//    }
+    public DepositSteps(){
+        driver=Hooks.driver;
+    }
 
 
 
     @Given ("User is logged into account")
     public void userIsLoggedIntoAccount() {
-        Hooks.LoginToApplicaiton();
+        driver=Hooks.LoginToApplicaiton();
         System.out.println("User is logged into account ");
 
     }
@@ -59,18 +61,16 @@ public class DepositSteps extends BaseUtil {
     }
 
     @And ("user clicks on Deposit button")
-    public void userClicksOnDepositButton() throws InterruptedException {
+    public void userClicksOnDepositButton() {
         depositsPage.ClickDeposit();
         System.out.println("user clicks on Deposit button");
-        driver.manage().timeouts().implicitlyWait (30, TimeUnit.SECONDS);
-        Thread.sleep(3000);
     }
 
     @Then ("The amount should be added to account")
     public void theAmountShouldBeAddedToAccount() {
 
         Assert.assertTrue(depositsPage.depositSuccessMessage.isDisplayed());
-        System.out.println(depositsPage.depositSuccessMessage.getText());
+        System.out.println();
 
 
 
@@ -104,9 +104,6 @@ public class DepositSteps extends BaseUtil {
 
     @And ("user enters OutOfRange amount")
     public void userEntersOutOfRangeAmount() {
-        System.out.println("user enters OutOfRange amount");
-        amount=-100;
-        depositsPage.EnterDepositAmount(amount);
 
     }
 }

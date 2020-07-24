@@ -1,0 +1,96 @@
+Request method:	POST
+Request URI:	http://216.10.245.166/Library/Addbook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Learn Selenium ",
+    "isbn": "ccc",
+    "aisle": "-1386348841",
+    "author": "Anusha"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Jul 2020 07:10:54 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "Msg": "successfully added",
+    "ID": "ccc-1386348841"
+}
+Request method:	GET
+Request URI:	http://216.10.245.166/Library/GetBook.php?ID=ccc-1386348841
+Proxy:			<none>
+Request params:	<none>
+Query params:	ID=ccc-1386348841
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 24 Jul 2020 07:10:58 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+[
+    {
+        "book_name": "Learn Selenium ",
+        "isbn": "ccc",
+        "aisle": "-1386348841",
+        "author": "Anusha"
+    }
+]
+Request method:	POST
+Request URI:	http://216.10.245.166/Library/DeleteBook.php
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ID": "ccc-1386348841"
+}
+HTTP/1.1 200 OK
+Date: Fri, 24 Jul 2020 07:10:59 GMT
+Server: Apache
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: application/json;charset=UTF-8
+
+{
+    "msg": "book is successfully deleted"
+}

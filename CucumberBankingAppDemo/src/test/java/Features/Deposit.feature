@@ -1,4 +1,4 @@
-#Author: Anilkumar Potula.
+#Author: Anilkumar Potula
 Feature: Deposit amount to account
 
   @Sanity

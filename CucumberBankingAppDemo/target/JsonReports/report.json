@@ -3,211 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-07-24T13:24:46.969Z",
+        "start_timestamp": "2020-07-25T03:25:12.470Z",
         "before": [
           {
             "result": {
-              "duration": 7951000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.Hooks.BeforeTest()"
-            }
-          }
-        ],
-        "line": 6,
-        "name": "Deposit positive amount",
-        "description": "",
-        "id": "deposit-amount-to-account;deposit-positive-amount",
-        "after": [
-          {
-            "result": {
-              "duration": 1366000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.Hooks.AfterTest()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1245000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User is logged into account",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 67000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User selects Deposits page",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.userSelectsDepositsPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 798000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user enters positive amount",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.userEntersPositiveAmount()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 82000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user clicks on Deposit button",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.userClicksOnDepositButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 43000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "The amount should be added to account",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.theAmountShouldBeAddedToAccount()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Sanity"
-          },
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-24T13:24:58.658Z",
-        "before": [
-          {
-            "result": {
-              "duration": 6371000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.Hooks.BeforeTest()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "Deposit negative amount",
-        "description": "",
-        "id": "deposit-amount-to-account;deposit-negative-amount",
-        "after": [
-          {
-            "result": {
-              "duration": 1423000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.Hooks.AfterTest()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1894000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User is logged into account",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 67000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User selects Deposits page",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.userSelectsDepositsPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 451000000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user enters negative amount",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.userEntersNegativeAmount()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 94000000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "user clicks on Deposit button",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.userClicksOnDepositButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Failed\u0027)]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YY089737\u0027, ip: \u0027144.54.216.236\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\ing08804\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:1124}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 1b342ffe9931e96b679da281ba5098d1\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Failed\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:79)\r\n\tat ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:19)\r\n",
-              "duration": 30040000000,
-              "status": "failed"
-            },
-            "line": 19,
-            "name": "Error message should be displayed",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-24T13:25:39.043Z",
-        "before": [
-          {
-            "result": {
-              "duration": 6468000000,
+              "duration": 15722000000,
               "status": "passed"
             },
             "match": {
@@ -222,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 1416000000,
+              "duration": 3971000000,
               "status": "passed"
             },
             "match": {
@@ -235,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2315000000,
+              "duration": 2047000000,
               "status": "passed"
             },
             "line": 23,
@@ -247,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 70000000,
+              "duration": 173000000,
               "status": "passed"
             },
             "line": 24,
@@ -259,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 969000000,
+              "duration": 1228000000,
               "status": "passed"
             },
             "line": 25,
@@ -271,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 284000000,
+              "duration": 407000000,
               "status": "passed"
             },
             "line": 26,
@@ -283,8 +83,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Failed\u0027)]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YY089737\u0027, ip: \u0027144.54.216.236\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\ing08804\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:1169}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 66f328a482c79d637bda40e2e331f183\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Failed\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:79)\r\n\tat ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:27)\r\n",
-              "duration": 30056000000,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Failed\u0027)]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YY089737\u0027, ip: \u0027144.54.215.74\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\ing08804\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:1288}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 8b73e9fc60748be6327c838381dc5dbd\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Failed\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:79)\r\n\tat ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:27)\r\n",
+              "duration": 30137000000,
               "status": "failed"
             },
             "line": 27,
@@ -297,16 +97,16 @@
         ],
         "tags": [
           {
-            "name": "@Regression"
+            "name": "@SystemWorkflow"
           }
         ]
       },
       {
-        "start_timestamp": "2020-07-24T13:26:20.647Z",
+        "start_timestamp": "2020-07-25T03:26:06.371Z",
         "before": [
           {
             "result": {
-              "duration": 7247000000,
+              "duration": 11960000000,
               "status": "passed"
             },
             "match": {
@@ -321,7 +121,7 @@
         "after": [
           {
             "result": {
-              "duration": 1221000000,
+              "duration": 1387000000,
               "status": "passed"
             },
             "match": {
@@ -334,7 +134,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2147000000,
+              "duration": 1831000000,
               "status": "passed"
             },
             "line": 31,
@@ -346,7 +146,7 @@
           },
           {
             "result": {
-              "duration": 223000000,
+              "duration": 90000000,
               "status": "passed"
             },
             "line": 32,
@@ -358,7 +158,7 @@
           },
           {
             "result": {
-              "duration": 520000000,
+              "duration": 909000000,
               "status": "passed"
             },
             "line": 33,
@@ -370,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 106000000,
+              "duration": 166000000,
               "status": "passed"
             },
             "line": 34,
@@ -382,8 +182,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Failed\u0027)]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YY089737\u0027, ip: \u0027144.54.216.236\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\ing08804\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:1236}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: b0151303ebff1f666a08442ccf05ce31\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Failed\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:79)\r\n\tat ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:35)\r\n",
-              "duration": 30073000000,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Failed\u0027)]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YY089737\u0027, ip: \u0027144.54.215.74\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\ing08804\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:23238}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 56db380df8061ac46e80537292bf8a0d\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Failed\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:79)\r\n\tat ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:35)\r\n",
+              "duration": 30046000000,
               "status": "failed"
             },
             "line": 35,
@@ -396,7 +196,7 @@
         ],
         "tags": [
           {
-            "name": "@Regression"
+            "name": "@SystemWorkflow"
           }
         ]
       }
@@ -412,319 +212,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-24T13:27:02.209Z",
+        "start_timestamp": "2020-07-25T03:26:52.790Z",
         "before": [
           {
             "result": {
-              "duration": 7272000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.Hooks.BeforeTest()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Login to Banking application with username",
-        "description": "",
-        "id": "login-to-banking-application;login-to-banking-application-with-username",
-        "after": [
-          {
-            "result": {
-              "duration": 1310000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.Hooks.AfterTest()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on the Login Page",
-            "match": {
-              "location": "StepDefinitions.LoginToApplicationSteps.userIsOnTheLoginPage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User clicks on Customer Login button",
-            "match": {
-              "location": "StepDefinitions.LoginToApplicationSteps.userClicksOnCustomerLoginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 881000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User selects the user name",
-            "match": {
-              "location": "StepDefinitions.LoginToApplicationSteps.userSelectsTheUserName()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2235000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User clicks on Login button",
-            "match": {
-              "location": "StepDefinitions.LoginToApplicationSteps.userClicksOnLoginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2065000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User should be logged in to application.",
-            "match": {
-              "location": "StepDefinitions.LoginToApplicationSteps.userShouldBeLoggedInToApplication()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Sanity"
-          }
-        ]
-      }
-    ],
-    "name": "Login to Banking application",
-    "description": "",
-    "id": "login-to-banking-application",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/Features/LoginToApplicaiton.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2020-07-24T13:27:16.017Z",
-        "before": [
-          {
-            "result": {
-              "duration": 8759000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.Hooks.BeforeTest()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "Withdraw positive amount within balance",
-        "description": "",
-        "id": "withdraw-amount-from-account;withdraw-positive-amount-within-balance",
-        "after": [
-          {
-            "result": {
-              "duration": 1470000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.Hooks.AfterTest()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2001000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User is logged into account",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 102000000,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User selects Withdrawl page",
-            "match": {
-              "location": "StepDefinitions.WithdrawlSteps.userSelectsWithdrawlPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 432000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user enters positive amount for withdrawl within balance",
-            "match": {
-              "location": "StepDefinitions.WithdrawlSteps.userEntersPositiveAmountForWithdrawlWithinBalance()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 150000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user clicks on Withdraw button",
-            "match": {
-              "location": "StepDefinitions.WithdrawlSteps.userClicksOnWithdrawButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Transaction Successful\u0027]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YY089737\u0027, ip: \u0027144.54.216.236\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\ing08804\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:1326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 847f70e34a4b7591ca46d0ec2810c401\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Transaction Successful\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.getText(Unknown Source)\r\n\tat StepDefinitions.WithdrawlSteps.theAmountShouldBeDeductedFromAccount(WithdrawlSteps.java:37)\r\n\tat ✽.The amount should be deducted from account(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Withdrawl.feature:16)\r\n",
-              "duration": 30060000000,
-              "status": "failed"
-            },
-            "line": 16,
-            "name": "The amount should be deducted from account",
-            "match": {
-              "location": "StepDefinitions.WithdrawlSteps.theAmountShouldBeDeductedFromAccount()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Sanity"
-          },
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-24T13:27:59.021Z",
-        "before": [
-          {
-            "result": {
-              "duration": 7916000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.Hooks.BeforeTest()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "Withdraw positive amount out of balance",
-        "description": "",
-        "id": "withdraw-amount-from-account;withdraw-positive-amount-out-of-balance",
-        "after": [
-          {
-            "result": {
-              "duration": 1671000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "StepDefinitions.Hooks.AfterTest()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1558000000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User is logged into account",
-            "match": {
-              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 84000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User selects Withdrawl page",
-            "match": {
-              "location": "StepDefinitions.WithdrawlSteps.userSelectsWithdrawlPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 367000000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user enters positive amount for withdrawl out of balance",
-            "match": {
-              "location": "StepDefinitions.WithdrawlSteps.userEntersPositiveAmountForWithdrawlOutOfBalance()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 154000000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "user clicks on Withdraw button",
-            "match": {
-              "location": "StepDefinitions.WithdrawlSteps.userClicksOnWithdrawButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 77000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Withdrawl Error message should be displayed",
-            "match": {
-              "location": "StepDefinitions.WithdrawlSteps.withdrawlErrorMessageShouldBeDisplayed()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-07-24T13:28:10.858Z",
-        "before": [
-          {
-            "result": {
-              "duration": 7087000000,
+              "duration": 7898000000,
               "status": "passed"
             },
             "match": {
@@ -739,7 +231,7 @@
         "after": [
           {
             "result": {
-              "duration": 1243000000,
+              "duration": 1160000000,
               "status": "passed"
             },
             "match": {
@@ -752,7 +244,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1550000000,
+              "duration": 2093000000,
               "status": "passed"
             },
             "line": 28,
@@ -764,7 +256,7 @@
           },
           {
             "result": {
-              "duration": 73000000,
+              "duration": 139000000,
               "status": "passed"
             },
             "line": 29,
@@ -776,7 +268,7 @@
           },
           {
             "result": {
-              "duration": 753000000,
+              "duration": 457000000,
               "status": "passed"
             },
             "line": 30,
@@ -788,7 +280,7 @@
           },
           {
             "result": {
-              "duration": 146000000,
+              "duration": 108000000,
               "status": "passed"
             },
             "line": 31,
@@ -800,7 +292,7 @@
           },
           {
             "result": {
-              "duration": 74000000,
+              "duration": 103000000,
               "status": "passed"
             },
             "line": 32,
@@ -813,16 +305,16 @@
         ],
         "tags": [
           {
-            "name": "@Regression"
+            "name": "@SystemWorkflow"
           }
         ]
       },
       {
-        "start_timestamp": "2020-07-24T13:28:21.801Z",
+        "start_timestamp": "2020-07-25T03:27:04.771Z",
         "before": [
           {
             "result": {
-              "duration": 6584000000,
+              "duration": 8110000000,
               "status": "passed"
             },
             "match": {
@@ -837,7 +329,7 @@
         "after": [
           {
             "result": {
-              "duration": 1451000000,
+              "duration": 1648000000,
               "status": "passed"
             },
             "match": {
@@ -850,7 +342,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1636000000,
+              "duration": 1471000000,
               "status": "passed"
             },
             "line": 36,
@@ -862,7 +354,7 @@
           },
           {
             "result": {
-              "duration": 120000000,
+              "duration": 178000000,
               "status": "passed"
             },
             "line": 37,
@@ -874,7 +366,7 @@
           },
           {
             "result": {
-              "duration": 766000000,
+              "duration": 875000000,
               "status": "passed"
             },
             "line": 38,
@@ -886,7 +378,7 @@
           },
           {
             "result": {
-              "duration": 136000000,
+              "duration": 135000000,
               "status": "passed"
             },
             "line": 39,
@@ -898,7 +390,7 @@
           },
           {
             "result": {
-              "duration": 84000000,
+              "duration": 88000000,
               "status": "passed"
             },
             "line": 40,
@@ -911,16 +403,16 @@
         ],
         "tags": [
           {
-            "name": "@Regression"
+            "name": "@SystemWorkflow"
           }
         ]
       },
       {
-        "start_timestamp": "2020-07-24T13:28:32.587Z",
+        "start_timestamp": "2020-07-25T03:27:17.283Z",
         "before": [
           {
             "result": {
-              "duration": 7175000000,
+              "duration": 9675000000,
               "status": "passed"
             },
             "match": {
@@ -935,7 +427,7 @@
         "after": [
           {
             "result": {
-              "duration": 1374000000,
+              "duration": 1777000000,
               "status": "passed"
             },
             "match": {
@@ -948,7 +440,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1474000000,
+              "duration": 2290000000,
               "status": "passed"
             },
             "line": 44,
@@ -960,7 +452,7 @@
           },
           {
             "result": {
-              "duration": 132000000,
+              "duration": 100000000,
               "status": "passed"
             },
             "line": 45,
@@ -972,7 +464,7 @@
           },
           {
             "result": {
-              "duration": 518000000,
+              "duration": 838000000,
               "status": "passed"
             },
             "line": 46,
@@ -984,7 +476,7 @@
           },
           {
             "result": {
-              "duration": 221000000,
+              "duration": 103000000,
               "status": "passed"
             },
             "line": 47,
@@ -996,7 +488,7 @@
           },
           {
             "result": {
-              "duration": 94000000,
+              "duration": 89000000,
               "status": "passed"
             },
             "line": 48,
@@ -1009,7 +501,7 @@
         ],
         "tags": [
           {
-            "name": "@Regression"
+            "name": "@SystemWorkflow"
           }
         ]
       }

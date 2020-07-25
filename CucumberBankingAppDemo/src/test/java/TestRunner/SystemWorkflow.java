@@ -8,15 +8,16 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/java/Features"}, glue ={"StepDefinitions"},
         monochrome=true, dryRun = false,
-        plugin={"pretty","html:target/HtmlReports/report.html",
+        plugin={"pretty","html:target/HtmlReports/SystemWorkflows.html",
                 "junit:target/JunitReports/report.xml",
                 "json:target/JsonReports/report.json"
-        }
+        },
+        tags = "@SystemWorkflow"
 
 
 
 
 )
-class TestRunner {
+class SystemWorkflow {
 
 }

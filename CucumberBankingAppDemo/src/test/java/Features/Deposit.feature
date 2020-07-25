@@ -18,7 +18,7 @@ Feature: Deposit amount to account
     And user clicks on Deposit button
     Then Error message should be displayed
 
-  @Regression
+  @SystemWorkflow
   Scenario: Deposit NaN amount
     Given User is logged into account
     And User selects Deposits page
@@ -26,7 +26,7 @@ Feature: Deposit amount to account
     And user clicks on Deposit button
     Then Error message should be displayed
 
-  @Regression
+  @SystemWorkflow
   Scenario: Deposit OutOfRange amount
     Given User is logged into account
     And User selects Deposits page

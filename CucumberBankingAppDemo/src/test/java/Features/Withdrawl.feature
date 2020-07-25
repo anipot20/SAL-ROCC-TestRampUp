@@ -6,8 +6,8 @@ Feature: Withdraw amount from account
 #    Then Check if the browser is launched
 
 
-@Sanity
-@Regression
+  @Sanity
+  @Regression
   Scenario: Withdraw positive amount within balance
     Given User is logged into account
     And User selects Withdrawl page
@@ -23,7 +23,7 @@ Feature: Withdraw amount from account
     And user clicks on Withdraw button
     Then Withdrawl Error message should be displayed
 
-  @Regression
+  @SystemWorkflow
   Scenario: Withdraw negative amount
     Given User is logged into account
     And User selects Withdrawl page
@@ -31,7 +31,7 @@ Feature: Withdraw amount from account
     And user clicks on Withdraw button
     Then Withdrawl Error message should be displayed
 
-  @Regression
+  @SystemWorkflow
   Scenario: Withdraw NaN amount
     Given User is logged into account
     And User selects Withdrawl page
@@ -39,7 +39,7 @@ Feature: Withdraw amount from account
     And user clicks on Withdraw button
     Then Withdrawl Error message should be displayed
 
-  @Regression
+  @SystemWorkflow
   Scenario: Withdraw OutOfRange amount
     Given User is logged into account
     And User selects Withdrawl page

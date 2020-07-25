@@ -8,16 +8,16 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/java/Features"}, glue ={"StepDefinitions"},
         monochrome=true, dryRun = false,
-        plugin={"pretty","html:target/HtmlReports/report.html",
+        plugin={"pretty","html:target/HtmlReports/RegressionResults.html",
                 "junit:target/JunitReports/report.xml",
                 "json:target/JsonReports/report.json"
         },
-        tags="@Sanity"
+        tags = "@Regression"
 
 
 
 
 )
-class SanityTestRunner {
+class Regression {
 
 }

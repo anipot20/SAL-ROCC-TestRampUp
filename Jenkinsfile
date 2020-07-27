@@ -21,8 +21,25 @@ pipeline {
     }
 
     stage('CopyBuilds') {
-      steps {
-        git(url: 'https://github.com/Anilkumar-potula/SAL-ROCC-TestRampUp.git', credentialsId: '7c5057cd-01bd-4cfe-b7a7-4ec0882e2032')
+      parallel {
+        stage('CopyBuilds') {
+          steps {
+            git(url: 'https://github.com/Anilkumar-potula/SAL-ROCC-TestRampUp.git', credentialsId: '7c5057cd-01bd-4cfe-b7a7-4ec0882e2032')
+          }
+        }
+
+        stage('CopyBuildsToAPIAgent') {
+          agent {
+            node {
+              label 'win-api'
+            }
+
+          }
+          steps {
+            git(url: 'https://github.com/Anilkumar-potula/SAL-ROCC-TestRampUp.git', credentialsId: '7c5057cd-01bd-4cfe-b7a7-4ec0882e2032')
+          }
+        }
+
       }
     }
 
@@ -43,7 +60,7 @@ pipeline {
         stage('API Sanity') {
           agent {
             node {
-              label 'windows'
+              label 'win-api'
             }
 
           }
@@ -66,7 +83,7 @@ pipeline {
         stage('error') {
           agent {
             node {
-              label 'windows'
+              label 'win-api'
             }
 
           }

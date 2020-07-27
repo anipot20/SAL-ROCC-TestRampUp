@@ -40,7 +40,7 @@ pipeline {
 
       }
       steps {
-        bat 'cd CucumberBankingAppDemo mvn -Dtest=Sanity test'
+        bat(script: 'cd C:\\Jenkins\\workspace\\SAL-ROCC-TestRampUp_master\\CucumberBankingAppDemo mvn -Dtest=Sanity test', returnStatus: true, returnStdout: true)
         sleep 2
         bat 'echo hi'
       }

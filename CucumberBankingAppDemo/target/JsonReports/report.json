@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-07-27T08:46:01.597Z",
+        "start_timestamp": "2020-07-27T11:02:04.693Z",
         "before": [
           {
             "result": {
-              "duration": 14703000000,
+              "duration": 12340000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Deposit positive amount",
+        "line": 22,
+        "name": "Deposit NaN amount",
         "description": "",
-        "id": "deposit-amount-to-account;deposit-positive-amount",
+        "id": "deposit-amount-to-account;deposit-nan-amount",
         "after": [
           {
             "result": {
-              "duration": 4834000000,
+              "duration": 1152000000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2460000000,
+              "duration": 1878000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 23,
             "name": "User is logged into account",
             "match": {
               "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 143000000,
+              "duration": 78000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 24,
             "name": "User selects Deposits page",
             "match": {
               "location": "StepDefinitions.DepositSteps.userSelectsDepositsPage()"
@@ -59,22 +59,22 @@
           },
           {
             "result": {
-              "duration": 704000000,
+              "duration": 739000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user enters positive amount",
+            "line": 25,
+            "name": "user enters NaN amount",
             "match": {
-              "location": "StepDefinitions.DepositSteps.userEntersPositiveAmount()"
+              "location": "StepDefinitions.DepositSteps.userEntersNaNAmount()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 143000000,
+              "duration": 259000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 26,
             "name": "user clicks on Deposit button",
             "match": {
               "location": "StepDefinitions.DepositSteps.userClicksOnDepositButton()"
@@ -83,23 +83,120 @@
           },
           {
             "result": {
-              "duration": 91000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Failed\u0027)]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YY089737\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\ing08804\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:34151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 666f9b71039a9f52c7ff46af26373deb\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Failed\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:79)\r\n\tat ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:27)\r\n",
+              "duration": 30085000000,
+              "status": "failed"
             },
-            "line": 11,
-            "name": "The amount should be added to account",
+            "line": 27,
+            "name": "Error message should be displayed",
             "match": {
-              "location": "StepDefinitions.DepositSteps.theAmountShouldBeAddedToAccount()"
+              "location": "StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Sanity"
+            "name": "@SystemWorkflow"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-27T11:02:51.459Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10441000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Deposit OutOfRange amount",
+        "description": "",
+        "id": "deposit-amount-to-account;deposit-outofrange-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 1170000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1967000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@Regression"
+            "result": {
+              "duration": 72000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User selects Deposits page",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userSelectsDepositsPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 638000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user enters OutOfRange amount",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userEntersOutOfRangeAmount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user clicks on Deposit button",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userClicksOnDepositButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(text(),\u0027Failed\u0027)]\"}\n  (Session info: chrome\u003d84.0.4147.89)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027YY089737\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\ing08804\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:34183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: f1eb001abe00e5eae87fa3f13ce594be\n*** Element info: {Using\u003dxpath, value\u003d//*[contains(text(),\u0027Failed\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)\r\n\tat StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed(DepositSteps.java:79)\r\n\tat ✽.Error message should be displayed(file:///C:/Users/ing08804/IdeaProjects/SAL-ROCC-TestRampUp/CucumberBankingAppDemo/src/test/java/Features/Deposit.feature:35)\r\n",
+              "duration": 30056000000,
+              "status": "failed"
+            },
+            "line": 35,
+            "name": "Error message should be displayed",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.errorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SystemWorkflow"
           }
         ]
       }
@@ -115,11 +212,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-27T08:46:24.956Z",
+        "start_timestamp": "2020-07-27T11:03:35.968Z",
         "before": [
           {
             "result": {
-              "duration": 12294000000,
+              "duration": 9030000000,
               "status": "passed"
             },
             "match": {
@@ -127,14 +224,14 @@
             }
           }
         ],
-        "line": 4,
-        "name": "Login to Banking application with username",
+        "line": 27,
+        "name": "Withdraw negative amount",
         "description": "",
-        "id": "login-to-banking-application;login-to-banking-application-with-username",
+        "id": "withdraw-amount-from-account;withdraw-negative-amount",
         "after": [
           {
             "result": {
-              "duration": 2129000000,
+              "duration": 1236000000,
               "status": "passed"
             },
             "match": {
@@ -147,75 +244,273 @@
         "steps": [
           {
             "result": {
+              "duration": 2760000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User is on the Login Page",
+            "line": 28,
+            "name": "User is logged into account",
             "match": {
-              "location": "StepDefinitions.LoginToApplicationSteps.userIsOnTheLoginPage()"
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
             },
             "keyword": "Given "
           },
           {
             "result": {
+              "duration": 96000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User clicks on Customer Login button",
+            "line": 29,
+            "name": "User selects Withdrawl page",
             "match": {
-              "location": "StepDefinitions.LoginToApplicationSteps.userClicksOnCustomerLoginButton()"
+              "location": "StepDefinitions.WithdrawlSteps.userSelectsWithdrawlPage()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 985000000,
+              "duration": 611000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User selects the user name",
+            "line": 30,
+            "name": "user enters negative for withdrawl amount",
             "match": {
-              "location": "StepDefinitions.LoginToApplicationSteps.userSelectsTheUserName()"
+              "location": "StepDefinitions.WithdrawlSteps.userEntersNegativeForWithdrawlAmount()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2258000000,
+              "duration": 88000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "User clicks on Login button",
+            "line": 31,
+            "name": "user clicks on Withdraw button",
             "match": {
-              "location": "StepDefinitions.LoginToApplicationSteps.userClicksOnLoginButton()"
+              "location": "StepDefinitions.WithdrawlSteps.userClicksOnWithdrawButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2060000000,
+              "duration": 79000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "User should be logged in to application.",
+            "line": 32,
+            "name": "Withdrawl Error message should be displayed",
             "match": {
-              "location": "StepDefinitions.LoginToApplicationSteps.userShouldBeLoggedInToApplication()"
+              "location": "StepDefinitions.WithdrawlSteps.withdrawlErrorMessageShouldBeDisplayed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Sanity"
+            "name": "@SystemWorkflow"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-27T11:03:49.905Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9316000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Withdraw NaN amount",
+        "description": "",
+        "id": "withdraw-amount-from-account;withdraw-nan-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 1665000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1984000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User selects Withdrawl page",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userSelectsWithdrawlPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1070000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user enters NaN for withdrawl amount",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userEntersNaNForWithdrawlAmount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176000000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user clicks on Withdraw button",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userClicksOnWithdrawButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 211000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Withdrawl Error message should be displayed",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.withdrawlErrorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SystemWorkflow"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-27T11:04:04.417Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9750000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.BeforeTest()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Withdraw OutOfRange amount",
+        "description": "",
+        "id": "withdraw-amount-from-account;withdraw-outofrange-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 1178000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.Hooks.AfterTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2480000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User is logged into account",
+            "match": {
+              "location": "StepDefinitions.DepositSteps.userIsLoggedIntoAccount()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User selects Withdrawl page",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userSelectsWithdrawlPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 946000000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user enters OutOfRange for withdrawl amount",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userEntersOutOfRangeForWithdrawlAmount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user clicks on Withdraw button",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.userClicksOnWithdrawButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Withdrawl Error message should be displayed",
+            "match": {
+              "location": "StepDefinitions.WithdrawlSteps.withdrawlErrorMessageShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SystemWorkflow"
           }
         ]
       }
     ],
-    "name": "Login to Banking application",
+    "name": "Withdraw amount from account",
     "description": "",
-    "id": "login-to-banking-application",
+    "id": "withdraw-amount-from-account",
     "keyword": "Feature",
-    "uri": "file:src/test/java/Features/LoginToApplicaiton.feature",
+    "uri": "file:src/test/java/Features/Withdrawl.feature",
     "tags": []
   }
 ]

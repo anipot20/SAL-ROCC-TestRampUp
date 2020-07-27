@@ -75,12 +75,18 @@ pipeline {
     stage('Regression') {
       parallel {
         stage('Regression') {
+          agent {
+            node {
+              label 'windows'
+            }
+
+          }
           steps {
             bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Regression test', label: 'Regression')
           }
         }
 
-        stage('error') {
+        stage('API Regression') {
           agent {
             node {
               label 'win-api'
@@ -96,6 +102,12 @@ pipeline {
     }
 
     stage('SystemWorkflows') {
+      agent {
+        node {
+          label 'windows'
+        }
+
+      }
       steps {
         bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=SystemWorkflow test', label: 'SystemWorkflow')
       }

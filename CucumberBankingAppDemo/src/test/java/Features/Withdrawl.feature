@@ -6,7 +6,7 @@ Feature: Withdraw amount from account
 #    Then Check if the browser is launched
 
 
-  @Sanity
+#  @Sanity
   @Regression
   Scenario: Withdraw positive amount within balance
     Given User is logged into account

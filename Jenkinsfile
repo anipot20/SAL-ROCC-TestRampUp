@@ -20,6 +20,12 @@ pipeline {
       }
     }
 
+    stage('CopyBuilds') {
+      steps {
+        git 'https://github.com/Anilkumar-potula/SAL-ROCC-TestRampUp.git'
+      }
+    }
+
     stage('Sanity') {
       agent {
         node {

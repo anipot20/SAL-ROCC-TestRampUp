@@ -5,4 +5,4 @@ Projects include: Jmeter, Cucmber, RestAssured, Java-Selenium
 
 Testing github jenkins integration Trail5
 
-Added Blue Ocena job
+Added Blue Ocean job

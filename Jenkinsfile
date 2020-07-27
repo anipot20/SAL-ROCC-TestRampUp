@@ -41,8 +41,8 @@ pipeline {
       }
       steps {
         bat 'cd CucumberBankingAppDemo'
-        bat 'echo hi'
         sleep 2
+        bat 'echo hi'
       }
     }
 

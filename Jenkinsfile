@@ -57,7 +57,7 @@ pipeline {
               bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Sanity test', label: 'SanityTests UI')
             }
 
-            bat(script: 'cd %\\CucumberBankingAppDemo\\target\\HtmlReports && copy SanityResults.html C:\\Automation\\Reports\\UI\\HtmlReports /y', label: 'Backup-Results')
+            bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo\\target\\HtmlReports && copy SanityResults.html C:\\Automation\\Reports\\UI\\HtmlReports /y', label: 'Backup-Results')
           }
         }
 

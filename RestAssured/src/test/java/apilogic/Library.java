@@ -62,7 +62,7 @@ public class Library   {
 
 	}
 
-    /*Method to create a html report*/
+    /*Method to create a html reports*/
 	public static void config()
 	{
 

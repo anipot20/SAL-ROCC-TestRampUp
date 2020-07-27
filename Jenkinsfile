@@ -41,7 +41,8 @@ pipeline {
 
       }
       steps {
-        bat(script: 'cd C:\\Jenkins\\workspace\\Copy-Buils\\CucumberBankingAppDemo mvn -Dtest=Sanity test', label: 'windows', returnStatus: true)
+        bat 'cd C:\\Jenkins\\workspace\\Copy-Buils\\CucumberBankingAppDemo'
+        bat 'mvn -Dtest=Sanity test'
       }
     }
 

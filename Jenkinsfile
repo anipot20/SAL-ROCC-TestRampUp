@@ -27,21 +27,55 @@ pipeline {
     }
 
     stage('Sanity') {
-      agent {
-        node {
-          label 'windows'
+      parallel {
+        stage('Sanity') {
+          agent {
+            node {
+              label 'windows'
+            }
+
+          }
+          steps {
+            bat 'echo hi'
+            bat 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Sanity test'
+          }
         }
 
-      }
-      steps {
-        bat 'echo hi'
-        bat 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Sanity test'
+        stage('API Sanity') {
+          agent {
+            node {
+              label 'windows'
+            }
+
+          }
+          steps {
+            bat(script: 'cd %WORKSPACE%\\RestAssured && mvn clean test -DsuiteXmlFile=functional.xml', label: 'API Sanity')
+          }
+        }
+
       }
     }
 
     stage('Regression') {
-      steps {
-        bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Regression test', label: 'Regression')
+      parallel {
+        stage('Regression') {
+          steps {
+            bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Regression test', label: 'Regression')
+          }
+        }
+
+        stage('') {
+          agent {
+            node {
+              label 'windows'
+            }
+
+          }
+          steps {
+            bat(script: 'cd %WORKSPACE%\\RestAssured && mvn clean test -DsuiteXmlFile=regression.xml', label: 'API Regression')
+          }
+        }
+
       }
     }
 

@@ -1,2 +1,2 @@
-mvn clean test -DsuiteXmlFile=C:/Learning/REST-API/RestAPIPractice/Demo/regression.xml
+mvn clean test -DsuiteXmlFile=C:/Learning/SA-ROCC-Test-Framework/SAL-ROCC-TestRampUp/RestAssured/Regression.xml
 cmd /k

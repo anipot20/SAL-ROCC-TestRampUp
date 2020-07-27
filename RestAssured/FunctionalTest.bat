@@ -1,2 +1,2 @@
-mvn clean test -DsuiteXmlFile=C:/Learning/REST-API/RestAPIPractice/Demo/functional.xml
+mvn clean test -DsuiteXmlFile=C:/Learning/SA-ROCC-Test-Framework/SAL-ROCC-TestRampUp/RestAssured/functional.xml
 cmd /k

@@ -115,7 +115,7 @@ pipeline {
 
       }
       steps {
-        bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=SystemWorkflow test', label: 'SystemWorkflow')
+        bat(script: 'mvn -Dtest=SystemWorkflow test', label: 'SystemWorkflow')
       }
     }
 

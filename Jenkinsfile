@@ -20,6 +20,12 @@ pipeline {
       }
     }
 
+    stage('CopyBuilds') {
+      steps {
+        git(url: 'https://github.com/Anilkumar-potula/SAL-ROCC-TestRampUp.git', credentialsId: '7c5057cd-01bd-4cfe-b7a7-4ec0882e2032')
+      }
+    }
+
     stage('Sanity') {
       agent {
         node {
@@ -29,8 +35,19 @@ pipeline {
       }
       steps {
         bat 'echo hi'
-        sh '''cd C:\\Jenkins\\workspace\\SAL-ROCC-TestRampUp_master\\CucumberBankingAppDemo
-mvn -Dtest=Sanity test'''
+        bat 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Sanity test'
+      }
+    }
+
+    stage('Regression') {
+      steps {
+        bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Regression test', label: 'Regression')
+      }
+    }
+
+    stage('SystemWorkflows') {
+      steps {
+        bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=SystemWorkflow test', label: 'SystemWorkflow')
       }
     }
 

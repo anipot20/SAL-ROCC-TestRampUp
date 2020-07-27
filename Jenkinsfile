@@ -41,7 +41,7 @@ pipeline {
 
       }
       steps {
-        bat 'cd C:\\Jenkins\\workspace\\Copy-Buils\\CucumberBankingAppDemo'
+        bat 'cd CucumberBankingAppDemo'
         bat 'mvn -Dtest=Sanity test'
       }
     }

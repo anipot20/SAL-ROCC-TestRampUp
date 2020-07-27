@@ -1,13 +1,7 @@
 pipeline {
-  agent any
+  agent none
   stages {
     stage('Build') {
-      agent {
-        node {
-          label 'master'
-        }
-
-      }
       steps {
         git(url: 'https://github.com/Anilkumar-potula/SAL-ROCC-TestRampUp', branch: 'master', poll: true, credentialsId: '7c5057cd-01bd-4cfe-b7a7-4ec0882e2032', changelog: true)
         echo 'Build Successful'

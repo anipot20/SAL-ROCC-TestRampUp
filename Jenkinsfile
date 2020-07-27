@@ -58,6 +58,7 @@ pipeline {
               bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo\\target\\HtmlReports && copy SanityResults.html C:\\Automation\\Reports\\UI\\HtmlReports /y', label: 'Backup-Results')
             }
 
+            bat(script: 'KSPACE%\\CucumberBankingAppDemo\\target\\HtmlReports && copy SanityResults.html C:\\Automation\\Reports\\UI\\HtmlReports /y', label: 'Backup-Results')
           }
         }
 
@@ -91,6 +92,7 @@ pipeline {
               bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo\\target\\HtmlReports && copy RegressionResults.html C:\\Automation\\Reports\\UI\\HtmlReports /y', label: 'Backup-Results')
             }
 
+            bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo\\target\\HtmlReports && copy RegressionResults.html C:\\Automation\\Reports\\UI\\HtmlReports /y', label: 'Backup-Results')
           }
         }
 
@@ -117,7 +119,10 @@ pipeline {
 
       }
       steps {
-        bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=SystemWorkflow test', label: 'SystemWorkflow')
+        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+          bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=SystemWorkflow test', label: 'SystemWorkflow')
+        }
+
         bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo\\target\\HtmlReports && copy SystemWorkflows.html C:\\Automation\\Reports\\UI\\HtmlReports /y', label: 'Backup-Results')
       }
     }

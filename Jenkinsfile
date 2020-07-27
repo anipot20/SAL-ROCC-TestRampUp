@@ -20,18 +20,6 @@ pipeline {
       }
     }
 
-    stage('CopyBuilds') {
-      agent {
-        node {
-          label 'windows'
-        }
-
-      }
-      steps {
-        git(url: 'https://github.com/Anilkumar-potula/SAL-ROCC-TestRampUp.git', changelog: true, credentialsId: '7c5057cd-01bd-4cfe-b7a7-4ec0882e2032')
-      }
-    }
-
     stage('Sanity') {
       agent {
         node {
@@ -40,9 +28,9 @@ pipeline {
 
       }
       steps {
-        bat(script: 'cd C:\\Jenkins\\workspace\\SAL-ROCC-TestRampUp_master\\CucumberBankingAppDemo mvn -Dtest=Sanity test', returnStatus: true, returnStdout: true)
-        sleep 2
         bat 'echo hi'
+        sh '''cd C:\\Jenkins\\workspace\\Copy-Buils\\CucumberBankingAppDemo
+mvn -Dtest=Sanity test'''
       }
     }
 

@@ -41,7 +41,8 @@ pipeline {
       }
       steps {
         bat 'cd CucumberBankingAppDemo'
-        bat 'mvn -Dtest=Sanity test'
+        bat 'echo hi'
+        sleep 2
       }
     }
 

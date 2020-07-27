@@ -33,5 +33,17 @@ pipeline {
       }
     }
 
+    stage('Sanity') {
+      agent {
+        node {
+          label 'windows'
+        }
+
+      }
+      steps {
+        bat(script: 'cd C:\\Jenkins\\workspace\\Copy-Buils\\CucumberBankingAppDemo mvn -Dtest=Sanity test', label: 'windows', returnStatus: true)
+      }
+    }
+
   }
 }

@@ -1,2 +1,2 @@
-mvn clean test -DsuiteXmlFile=/RestAssured/regression.xml
+mvn clean test -DsuiteXmlFile=RestAssured/regression.xml
 cmd /k

@@ -39,5 +39,17 @@ pipeline {
       }
     }
 
+    stage('Regression') {
+      steps {
+        bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Regression test', label: 'Regression')
+      }
+    }
+
+    stage('SystemWorkflows') {
+      steps {
+        bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=SystemWorkflow test', label: 'SystemWorkflow')
+      }
+    }
+
   }
 }

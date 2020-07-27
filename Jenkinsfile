@@ -28,7 +28,6 @@ pipeline {
 
       }
       steps {
-        bat 'rmdir /Q /S SAL-ROCC-TestRampUp_master'
         git(url: 'https://github.com/Anilkumar-potula/SAL-ROCC-TestRampUp.git', changelog: true, credentialsId: '7c5057cd-01bd-4cfe-b7a7-4ec0882e2032')
       }
     }

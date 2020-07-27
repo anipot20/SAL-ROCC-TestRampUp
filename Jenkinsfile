@@ -54,6 +54,7 @@ pipeline {
           }
           steps {
             bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Sanity test', label: 'SanityTests UI')
+            catchError(stageResult: 'Failed', buildResult: 'SUCCESS')
           }
         }
 
@@ -83,6 +84,7 @@ pipeline {
           }
           steps {
             bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Regression test', label: 'Regression')
+            catchError(buildResult: 'SUCCESS', stageResult: 'Failed')
           }
         }
 

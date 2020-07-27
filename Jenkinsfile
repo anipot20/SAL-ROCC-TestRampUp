@@ -36,8 +36,7 @@ pipeline {
 
           }
           steps {
-            bat 'echo hi'
-            bat 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Sanity test'
+            bat(script: 'cd %WORKSPACE%\\CucumberBankingAppDemo && mvn -Dtest=Sanity test', label: 'SanityTests UI')
           }
         }
 
@@ -64,7 +63,7 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           agent {
             node {
               label 'windows'

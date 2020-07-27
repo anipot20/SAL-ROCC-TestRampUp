@@ -29,7 +29,7 @@ pipeline {
       }
       steps {
         bat 'echo hi'
-        sh '''cd C:\\Jenkins\\workspace\\Copy-Buils\\CucumberBankingAppDemo
+        sh '''cd C:\\Jenkins\\workspace\\SAL-ROCC-TestRampUp_master\\CucumberBankingAppDemo
 mvn -Dtest=Sanity test'''
       }
     }

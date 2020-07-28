@@ -68,10 +68,10 @@ public class Library   {
 
 		String path=System.getProperty("user.dir")+"\\reports\\index.html";
 		ExtentSparkReporter reporter=new ExtentSparkReporter(path);
-		reporter.config().setReportName("WebApp Reports");
+		reporter.config().setReportName("RestAssured Reports");
 		report=new ExtentReports();
 		report.attachReporter(reporter);
-		report.setSystemInfo("QA", "Anusha");
+		report.setSystemInfo("Windows", "Chrome");
 
 	}
 

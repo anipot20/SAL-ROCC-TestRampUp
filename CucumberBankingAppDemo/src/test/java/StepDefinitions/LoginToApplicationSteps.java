@@ -42,8 +42,8 @@ public class LoginToApplicationSteps {
 
     }
 
-    @And("User selects the user name")
-    public void userSelectsTheUserName()   {
+    @And("User selects the user name1")
+    public void userSelectsTheUserName1()   {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         loginPage = new LoginPage(driver);

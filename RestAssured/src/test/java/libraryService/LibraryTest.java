@@ -28,7 +28,7 @@ public class LibraryTest extends Library {
 	{
 		String expected_message="successfully added";
 
-
+        System.out.println("Adding changes for demo");
 		String actual=super.AddBook();
 		Assert.assertEquals(expected_message ,actual);
 		System.out.println(actual);

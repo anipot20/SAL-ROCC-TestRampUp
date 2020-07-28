@@ -22,7 +22,7 @@ pipeline {
 
     stage('CopyBuilds') {
       parallel {
-        stage('CopyBuilds') {
+        stage('CopyBuildsToGUIAgent') {
           steps {
             git(url: 'https://github.com/Anilkumar-potula/SAL-ROCC-TestRampUp.git', credentialsId: '7c5057cd-01bd-4cfe-b7a7-4ec0882e2032')
           }
@@ -45,7 +45,7 @@ pipeline {
 
     stage('Sanity') {
       parallel {
-        stage('Sanity') {
+        stage('UI Sanity') {
           agent {
             node {
               label 'windows'
@@ -82,7 +82,7 @@ pipeline {
 
     stage('Regression') {
       parallel {
-        stage('Regression') {
+        stage('UI Regression') {
           agent {
             node {
               label 'windows'

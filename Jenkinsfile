@@ -73,6 +73,7 @@ pipeline {
               bat(script: 'cd %WORKSPACE%\\RestAssured && mvn clean test -DsuiteXmlFile=functional.xml', label: 'API Sanity')
             }
 
+            bat(script: 'cd %WORKSPACE%\\RestAssured\\reports && copy index.html C:\\Automation\\Reports\\API\\Sanity /y', label: 'Backup-Results')
           }
         }
 
@@ -109,6 +110,7 @@ pipeline {
               bat(script: 'cd %WORKSPACE%\\RestAssured && mvn clean test -DsuiteXmlFile=regression.xml', label: 'API Regression')
             }
 
+            bat(script: 'cd %WORKSPACE%\\RestAssured\\reports && copy index.html C:\\Automation\\Reports\\API\\Regression /y', label: 'Backup-Results')
           }
         }
 

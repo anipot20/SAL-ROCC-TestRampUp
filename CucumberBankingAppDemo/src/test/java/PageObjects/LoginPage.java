@@ -1,5 +1,6 @@
 package PageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +15,7 @@ public class LoginPage {
     WebElement dropdownUserSelection;
 
     @FindBy(how = How.XPATH, using = "//*[text()='Harry Potter']")
-    WebElement userName;
+    WebElement userNameHarry;
 
     @FindBy(how = How.XPATH, using = "//*[text()='Login']")
     WebElement btnLogin;
@@ -30,7 +31,15 @@ public class LoginPage {
 
     public void SelectUser(){
         dropdownUserSelection.click();
+        userNameHarry.click();
+    }
+
+    public void SelectUser(String user){
+        //@FindBy(how = How.XPATH, using = "//*[text()='Harry Potter']")
+        WebElement userName = driver.findElement(By.xpath("//*[text()='"+user+"'"+"]"));
+        dropdownUserSelection.click();
         userName.click();
+
     }
 
     public void LoginToAccount(){

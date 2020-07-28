@@ -1,6 +1,7 @@
 package StepDefinitions;
 
 import Base.BaseUtil;
+import Base.ReportingUtil;
 import PageObjects.ApplicationHome;
 import PageObjects.CustomerHomePage;
 import PageObjects.LoginPage;
@@ -19,6 +20,7 @@ public class Hooks extends BaseUtil{
     public static ApplicationHome applicationHome;
     public static CustomerHomePage customerHomePage;
     public static LoginPage loginPage;
+    //public static ReportingUtil reportingUtil = new ReportingUtil();
 
     @Before
     public void BeforeTest() throws IOException{

@@ -2,7 +2,7 @@ package apilogic;
 import org.junit.Assert;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import Payload.Data;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -32,8 +32,8 @@ public class ROCClogin {
 
 		String uri="https://salhealth009-rocc.cloud.pcftest.com/";
 		PrintStream log=new PrintStream(new FileOutputStream("ROCClogs.txt"));
-        req=new RequestSpecBuilder().setBaseUri(uri).addFilter(RequestLoggingFilter.logRequestTo(log)).addFilter(ResponseLoggingFilter.logResponseTo(log)).setContentType(ContentType.JSON).build();
-        resspec=new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+		req=new RequestSpecBuilder().setBaseUri(uri).addFilter(RequestLoggingFilter.logRequestTo(log)).addFilter(ResponseLoggingFilter.logResponseTo(log)).setContentType(ContentType.JSON).build();
+		resspec=new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 
 	}
 
@@ -42,10 +42,10 @@ public class ROCClogin {
 	public static void config()
 	{
 
-        String path=System.getProperty("user.dir")+"\\reports\\index1.html";
-		ExtentSparkReporter reporter=new ExtentSparkReporter(path);
+		String path=System.getProperty("user.dir")+"\\reports\\index1.html";
+		ExtentHtmlReporter reporter=new ExtentHtmlReporter(path);
 		reporter.config().setReportName("WebApp Reports");
-        report=new ExtentReports();
+		report=new ExtentReports();
 		report.attachReporter(reporter);
 		report.setSystemInfo("QA", "Anusha");
 
@@ -55,13 +55,13 @@ public class ROCClogin {
 	public static void Login()
 	{
 
-        report.createTest("ROCC_Login");
+		report.createTest("ROCC_Login");
 		RequestSpecification res=given().spec(req).body(Data.Login());
 		Response response=res.when().post("serverlogin").then().spec(resspec).extract().response();
 		String resp=response.asString();
 		JsonPath js=Utils.rawtoJson(resp);
 		String access_token=js.getString("loginResponse.accessToken");
-        System.out.println(access_token);
+		System.out.println(access_token);
 		Assert.assertTrue(true);
 		report.flush();
 

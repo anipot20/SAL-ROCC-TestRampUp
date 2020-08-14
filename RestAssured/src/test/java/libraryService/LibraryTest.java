@@ -3,21 +3,30 @@ package libraryService;
 import java.io.FileNotFoundException;
 
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+
+import com.aventstack.extentreports.Status;
+
 import apilogic.Library;
+import org.testng.ITestResult;
 
-
+ @Listeners(resources.ListenersTestNG.class)
+ 
 /*Library API: POST,GET,DELETE*/
 public class LibraryTest extends Library {
+
 
 	
 	@BeforeTest(groups= {"Regression"})
 	public void initialize() throws FileNotFoundException
 	{
 		super.basic();
-		super.config();
+		
 	}
 	
 	
@@ -28,7 +37,7 @@ public class LibraryTest extends Library {
 	{
 		String expected_message="successfully added";
 
-        System.out.println("Adding changes for demo");
+
 		String actual=super.AddBook();
 		Assert.assertEquals(expected_message ,actual);
 		System.out.println(actual);
@@ -50,11 +59,14 @@ public class LibraryTest extends Library {
 
 	public void LibraryDelete()
 	{
-		String expected_delmessage="book is successfully deleted";
+		String expected_delmessage="books is successfully deleted";
 		String actual_delmessage=super.DeleteBook();
 		Assert.assertEquals(expected_delmessage, actual_delmessage);
-		Assert.assertTrue(true);
+		
 
 	}
+	
+
+	
 
 }

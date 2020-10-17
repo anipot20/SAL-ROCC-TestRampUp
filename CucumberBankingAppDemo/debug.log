@@ -1,2 +1,13 @@
 [0723/044642.326:ERROR:process_reader_win.cc(151)] SuspendThread: Access is denied. (0x5)
 [0723/044642.334:ERROR:exception_snapshot_win.cc(98)] thread ID 2992 not found in process
+[1017/054005.798:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1017/054312.562:ERROR:exit_code_watcher_win.cc(87)] Failed to wait for process exit or stop event
+[1017/054312.630:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1017/054345.837:ERROR:exit_code_watcher_win.cc(87)] Failed to wait for process exit or stop event
+[1017/054345.885:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1017/054400.197:ERROR:exit_code_watcher_win.cc(87)] Failed to wait for process exit or stop event
+[1017/054400.294:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1017/054444.492:ERROR:exit_code_watcher_win.cc(87)] Failed to wait for process exit or stop event
+[1017/054444.553:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)
+[1017/054528.643:ERROR:exit_code_watcher_win.cc(87)] Failed to wait for process exit or stop event
+[1017/054528.704:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: The pipe has been ended. (0x6D)

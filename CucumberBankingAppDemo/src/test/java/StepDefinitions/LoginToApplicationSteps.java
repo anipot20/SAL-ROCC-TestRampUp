@@ -42,8 +42,8 @@ public class LoginToApplicationSteps {
 
     }
 
-    @And("User selects the user name1")
-    public void userSelectsTheUserName1()   {
+    @And("User selects the user name")
+    public void userSelectsTheUserName()   {
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         loginPage = new LoginPage(driver);
@@ -71,12 +71,12 @@ public class LoginToApplicationSteps {
     }
 
 
-    @And ("^User selects the (.*)$")
-    public void userSelectsTheUsername(String username) {
-        loginPage = new LoginPage(driver);
-//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-
-        loginPage.SelectUser(username);
-    }
+//    @And ("^User selects the (.*)$")
+//    public void userSelectsTheUsername(String username) {
+//        loginPage = new LoginPage(driver);
+////        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+////        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+//
+//        loginPage.SelectUser(username);
+//    }
 }

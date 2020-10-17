@@ -14,9 +14,6 @@ import org.junit.runner.RunWith;
         },
         tags="@Sanity"
 
-
-
-
 )
 class Sanity {
 

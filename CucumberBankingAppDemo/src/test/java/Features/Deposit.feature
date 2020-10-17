@@ -1,7 +1,7 @@
 #Author: Anilkumar Potula
 Feature: Deposit amount to account
 
-  @Sanity
+#  @Sanity
   @Regression
   Scenario: Deposit positive amount
     Given User is logged into account
